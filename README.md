@@ -50,4 +50,4 @@ The repoasitory was a byproduct of boredom and quarantine.
 The alias above are the common slangs in hindi to perform a git action. 
 
 ## Author 
-Made with :heart: + :coffee: + 😪 and by Aman Kumar - [3point141](https://github.com/3point141)
+Made with :heart: + :coffee: + 😪 by Aman Kumar - [3point141](https://github.com/3point141)
