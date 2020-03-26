@@ -16,7 +16,7 @@ then
 	elif [ $os == "linux" ]
 			then
 			read -p "kon sa? (ubuntu/redhat) " linux
-			if [ $linux == "Ubuntu" ]
+			if [ $linux == "ubuntu" ]
 				then
 					echo "password daal dena..."
 					sudo apt install git
