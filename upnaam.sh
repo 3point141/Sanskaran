@@ -2,6 +2,7 @@
 echo "upnaam shuru ho gya hai..."
 
 if [[ "$OSTYPE" == "linux"* ]]; then
+	echo "OS : $OSTYPE"
     echo "alias nya_repo='git init'" >>~/.bashrc
 	echo "alias origin_add_kro='git remote add origin'" >>~/.bashrc
 	echo "alias chaapo='git clone'" >>~/.bashrc
@@ -24,9 +25,12 @@ if [[ "$OSTYPE" == "linux"* ]]; then
 	echo "alias stash_dikhao='git stash list'" >>~/.bashrc
 	echo "alias sabse_nya_change_lagao='git stash pop'" >>~/.bashrc
 	echo " " >>~/.bashrc
-	source ~/.bashrc
-elif [[ "$OSTYPE" == "darwin"* ]]; then
+	echo "Configurations added to source file."
+	source ~/.$sourcefile
+	echo "Sourced the source file"
 
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+	echo "OS : $OSTYPE"
 	read -p "kon sa terminal? (bash/zsh) " terminal
 	if [[ $terminal == bash ]]; then
 		sourcefile="bashrc"
@@ -56,7 +60,10 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 	echo "alias stash_dikhao='git stash list'" >>~/.$sourcefile
 	echo "alias sabse_nya_change_lagao='git stash pop'" >>~/.$sourcefile
 	echo " " >>~/.$sourcefile
+	echo "Configurations added to source file."
 	source ~/.$sourcefile
+	echo "Sourced the source file"
 else
-        "# Unknown."
+        echo "Windows System.."
+        echo "Please run doskey.sh to get configuration. Remember, in windows, the alias remains for the instance."
 fi

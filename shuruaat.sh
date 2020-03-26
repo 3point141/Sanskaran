@@ -12,6 +12,7 @@ then
 		echo "Bade log"
 		brew install git
 		git --version
+		sudo sh upnaam.sh
 	elif [ $os == "linux" ]
 			then
 			read -p "kon sa? (ubuntu/redhat) " linux
@@ -19,16 +20,24 @@ then
 				then
 					echo "password daal dena..."
 					sudo apt install git
+					git --version
+					sudo sh upnaam.sh
 			fi
 			if [ $linux == "redhat" ] 
 				then
 					echo "password daal dena..."
 					sudo yum install git
+					git --version
+					sudo sh upnaam.sh
 			fi
 	elif [[ $os == "windows" ]]; then
 		echo "https://git-scm.com/downloads yahan se download krke install krlo"
+		echo "after that run doskey.sh using bash doskey.sh"
 	fi	
 else
-	echo "Sabaash! Kaafi time bach gya..."
-	sudo sh upnaam.sh
+	if [[ "$OSTYPE" == "win"* ]]; then
+		bash doskey.sh
+	else
+		sudo sh upnaam.sh
+	fi
 fi
