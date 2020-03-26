@@ -1,7 +1,7 @@
 # Sanskaran - Git but in Hindi
 
 This repo will help to just make alias for common git commands. This wont help enhance any functionality. <br>
-The repoasitory was a byproduct of boredom and quarantine.
+The repository was a byproduct of boredom and quarantine.
 
 # How to Use
 
